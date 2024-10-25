@@ -4,9 +4,226 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="utility.css">
+
+    <title>Spotify - Web Player: Music for everyone</title>
 </head>
 <body>
-    <img src="logo.svg" alt="">
+    <div class="container flex bg-black">
+        <div class="left-section bg-black">
+            
+            <div class="home bg-grey rounded m-1 p-1">
+                <div class="logo flex justify"><img class="invert" src="logo.svg" alt=""></div>
+                <ul>
+                    <li class="flex items-content"><img class="invert" src="home.svg" alt="home">Home</li>
+                    <li class="flex items-content"><img class="invert" src="search.svg" alt="">Search</li>
+                </ul>
+            </div>      
+
+            <div class="library bg-grey rounded m-1 p-1">
+                <div class="heading">
+                    <img class="invert" src="library.svg" alt=""> 
+                    <H2>Your library</H2>
+                    
+                </div>
+                <div class="songlist">
+                    <ul>
+
+                        <!-- <li>
+                            <img class="" src="Images/ab67706f00000002472120b92edea982b5feb264.jpeg" alt="" srcset="">
+                            <div class="info">
+                                <div class="songname f-16">Song Name</div>
+                                <div class="artistname f-14">Danial</div>
+                            </div>
+                            <div class="playnow">
+                                <img class="" src="play.svg" alt="" srcset="">
+                            </div>
+                        </li> -->
+                    </ul>
+                </div>
+            
+                <div class="footer">
+                    <div>
+                        <a href="https://www.spotify.com/pk-en/legal/" id="">
+                            <span>Legal</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/pk-en/safetyandprivacy/" id="">
+                            <span>Safety Privacy Center</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/pk-en/legal/privacy-policy/" id="">
+                            <span>Privacy Policy</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/pk-en/legal/cookies-policy/" id="">
+                            <span>Cookies</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/pk-en/legal/privacy-policy/#s3" id="">
+                            <span>About Ads</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/pk-en/accessibility/" id="">
+                            <span>Accessibility</span>
+                        </a>
+                    </div>
+                
+                </div>
+            </div>    
+
+            
+            
+        </div>
+        <div class="right-section rounded bg-grey">
+            <div class="header rounded bg-grey-2">
+                <div class="nav">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M15 6L9.70711 11.2929C9.37377 11.6262 9.20711 11.7929 9.20711 12C9.20711 12.2071 9.37377 12.3738 9.70711 12.7071L15 18"
+                            stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9 18L14.2929 12.7071C14.6262 12.3738 14.7929 12.2071 14.7929 12C14.7929 11.7929 14.6262 11.6262 14.2929 11.2929L9 6"
+                            stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <div class="buttons">
+                    <button class="signupbtn f-16">Sign up</button>
+                    <button class="loginbtn bg-white f-16">Log in</button>
+                </div>
+            </div>
+
+            <div class="spotifyPlaylist">
+                <h1>Spotify Playlists</h1>
+                <div class="cardContainer">
+                    <div class="card rounded bg-grey-2">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="23px" height="23px">
+                                <path d="M8 5v14l11-7z"/>
+                            </svg>
+                        </div>
+                        <img src="Images/ab67706f00000002fe79f261e5469376be16e12a.jpeg" alt="">
+                        <h2>Pop Rising!</h2>
+                        <p>Hits to boost your mood and fill you with happiness!</p>
+                    </div>
+                    
+                    <div class="card rounded bg-grey-2">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="23px" height="23px">
+                                <path d="M8 5v14l11-7z"/>
+                            </svg>
+                        </div>
+                        <img src="Images/ab67706f00000002472120b92edea982b5feb264.jpeg" alt="">
+                        <h2>Pop Rising!</h2>
+                        <p>Hits to boost your mood and fill you with happiness!</p>
+                    </div>
+                    
+                    <div class="card rounded bg-grey-2">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="23px" height="23px">
+                                <path d="M8 5v14l11-7z"/>
+                            </svg>
+                        </div>
+                        <img src="Images/ab67706f0000000255be59b7be2929112e7ac927.jpeg" alt="">
+                        <h2>Pop Rising!</h2>
+                        <p>Hits to boost your mood and fill you with happiness!</p>
+                    </div>
+                    
+                    <div class="card rounded bg-grey-2">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="23px" height="23px">
+                                <path d="M8 5v14l11-7z"/>
+                            </svg>
+                        </div>
+                        <img src="Images/ab67706f000000028b94921d98021a701f6677cf.jpeg" alt="">
+                        <h2>Pop Rising!</h2>
+                        <p>Hits to boost your mood and fill you with happiness!</p>
+                    </div>
+                    
+                    <div class="card rounded bg-grey-2">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="23px" height="23px">
+                                <path d="M8 5v14l11-7z"/>
+                            </svg>
+                        </div>
+                        <img src="Images/ab67706f00000002afc903a8a29514bdd8db39ce.jpeg" alt="">
+                        <h2>Pop Rising!</h2>
+                        <p>Hits to boost your mood and fill you with happiness!</p>
+                    </div>
+                    
+                    <div class="card rounded bg-grey-2">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="23px" height="23px">
+                                <path d="M8 5v14l11-7z"/>
+                            </svg>
+                        </div>
+                        <img src="Images/ab67706f000000028d325cf541938c4046f62c9e.jpeg" alt="">
+                        <h2>Pop Rising!</h2>
+                        <p>Hits to boost your mood and fill you with happiness!</p>
+                    </div>
+                    <div class="card rounded bg-grey-2">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="23px" height="23px">
+                                <path d="M8 5v14l11-7z"/>
+                            </svg>
+                        </div>
+                        <img src="Images/ab67706f000000028d325cf541938c4046f62c9e.jpeg" alt="">
+                        <h2>Pop Rising!</h2>
+                        <p>Hits to boost your mood and fill you with happiness!</p>
+                    </div>
+                    <div class="card rounded bg-grey-2">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="23px" height="23px">
+                                <path d="M8 5v14l11-7z"/>
+                            </svg>
+                        </div>
+                        <img src="Images/ab67706f000000028d325cf541938c4046f62c9e.jpeg" alt="">
+                        <h2>Pop Rising!</h2>
+                        <p>Hits to boost your mood and fill you with happiness!</p>
+                    </div>
+                    <div class="card rounded bg-grey-2">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="23px" height="23px">
+                                <path d="M8 5v14l11-7z"/>
+                            </svg>
+                        </div>
+                        <img src="Images/ab67706f000000028d325cf541938c4046f62c9e.jpeg" alt="">
+                        <h2>Pop Rising!</h2>
+                        <p>Hits to boost your mood and fill you with happiness!</p>
+                    </div>
+                    <div class="card rounded bg-grey-2">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="23px" height="23px">
+                                <path d="M8 5v14l11-7z"/>
+                            </svg>
+                        </div>
+                        <img src="Images/ab67706f000000028d325cf541938c4046f62c9e.jpeg" alt="">
+                        <h2>Pop Rising!</h2>
+                        <p>Hits to boost your mood and fill you with happiness!</p>
+                    </div>
+                    
+                </div>
+
+                
+            </div>
+
+        </div>
+        <div class="playbar bg-black">
+            <div class="songbuttons justify">
+                <img src="prevsong.svg" alt="" srcset="">
+                <img src="play.svg" alt="" srcset="">
+                <img src="nextsong.svg" alt="" srcset="">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
